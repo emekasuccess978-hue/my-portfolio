@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EMEKA SUCCESS | Software developer student</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emeka Success — Software Development Portfolio</title>
+  <meta name="description" content="Emeka Success is a second-year student at Michael Okpara University of Agriculture, Umudike, building toward a career in software development.">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* Colors and fonts live here. Change the variables to restyle the whole site. */
+:root{
+  --paper:#f7f8f6; --ink:#1b2430; --muted:#566170; --accent:#1f5c7a; --mist:#e4ebee; --line:#cfd8dc;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif; /* heading font */
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; /* body font */
+}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#12181f; --ink:#eef1f3; --muted:#a6b1bc; --accent:#7fc0de; --mist:#1c2630; --line:#2f3b47}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:1.0625rem/1.6 var(--sans)}
+a{color:var(--accent)}
+a:focus-visible,.button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:1rem;top:1rem;background:var(--paper);padding:.5rem 1rem;z-index:10}
+
+.site-header{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between;align-items:center;
+  padding:.75rem clamp(1rem,5vw,3rem);background:var(--paper);border-bottom:1px solid var(--line)}
+.brand{font:700 1.1rem var(--serif);color:var(--ink);text-decoration:none}
+.site-header nav{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem}
+.site-header nav a{color:var(--muted);text-decoration:none;font-size:.95rem}
+.site-header nav a:hover{color:var(--ink);text-decoration:underline}
+
+main{max-width:68rem;margin:0 auto;padding:0 clamp(1rem,5vw,3rem)}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+.hero{border-top:0;display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(1.5rem,5vw,4rem);align-items:center;padding-top:3rem}
+h1,h2,h3{font-family:var(--serif);line-height:1.2;margin:0 0 .75rem}
+h1{font-size:clamp(2.5rem,7vw,4.25rem);letter-spacing:-.02em}
+h2{font-size:clamp(1.6rem,4vw,2.1rem)}
+h3{font-size:1.15rem}
+.statement{font-size:clamp(1.15rem,2.5vw,1.45rem);max-width:34rem;color:var(--muted)}
+.button{display:inline-block;background:var(--accent);color:var(--paper);padding:.75rem 1.4rem;border-radius:.35rem;text-decoration:none;font-weight:600}
+.button:hover{filter:brightness(1.12)}
+
+/* Photo: fixed 4:5 frame, offset block behind it. object-fit keeps it undistorted. */
+.portrait{margin:0;position:relative;aspect-ratio:4/5;max-width:26rem;width:100%;justify-self:center;background:var(--mist);
+  border-radius:.4rem;box-shadow:.9rem .9rem 0 var(--mist);outline:1px solid var(--line)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 20%;border-radius:.4rem;display:block}
+
+.project{padding:1.5rem 0;border-bottom:1px solid var(--line);max-width:46rem}
+.project:last-child{border-bottom:0}
+.meta{color:var(--muted);margin:0 0 .75rem;font-size:.95rem}
+dl{margin:0}
+dt{font-weight:700;margin-top:.6rem}
+dd{margin:0}
+.skill-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:2rem}
+section p,section li{max-width:44rem}
+ul{padding-left:1.2rem}
+.links a{margin-right:1.25rem}
+footer{max-width:68rem;margin:0 auto;padding:2rem clamp(1rem,5vw,3rem);color:var(--muted);border-top:1px solid var(--line);font-size:.9rem}
+
+@media (max-width:700px){
+  .hero{grid-template-columns:1fr}
+  .portrait{order:-1;max-width:18rem;justify-self:start;box-shadow:.6rem .6rem 0 var(--mist)}
+}
+</style>
+</head>
+<body>
+<!-- HOW TO EDIT: replace every [bracketed] text. Delete anything that isn't true yet. Never add claims you can't back up. -->
+<a class="skip" href="#work">Skip to my work</a>
+
+<header class="site-header">
+  <a class="brand" href="#top">EMEKA SUCCESS</a>
+  <nav aria-label="Main">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#learning">Learning</a>
+    <a href="#becoming">Becoming</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Emeka Success</h1>
+    <p class="statement">I'm a second-year undergraduate student at Michael Okpara University of Agriculture, Umudike, building toward a career in software development.</p>
+    <p><a class="button" href="#work">See my work</a></p>
+  </div>
+  <figure class="portrait">
+    <!-- PHOTO: save your headshot as photo.jpg (4:5 portrait, about 1200x1500 px, under 300 KB) -->
+    <img src="photo.jpg" width="1200" height="1500" alt="Portrait of Emeka Success, smiling" onerror="this.style.display='none'">
+  </figure>
+</section>
+
+<section id="work">
+  <h2>Selected work</h2>
+  <!-- Copy this <article> block for each project (3 to 6). Use only real work. -->
+  <article class="project">
+    <h3>Shop website</h3>
+    <p class="meta">Computer Science, 4 years, solo individual project</p>
+    <dl>
+      <dt>The problem</dt><dd>Our shop had no website, so phones were going missing.</dd>
+      <dt>What I did</dt><dd>I built a simple website system, then trained my boss to manage it.</dd>
+      <dt>The result</dt><dd>No phones have gone missing since, and over 30 customers now use the site.</dd>
+    </dl>
+    <p><a href="https://github.com/emekasuccess978-hue">View the project</a></p>
+  </article>
+</section>
+   <dl>
+  <dt>The problem</dt><dd>Our shop had no website, so phones were going missing.</dd>
+  <dt>What I did</dt><dd>I built a simple website system, then trained my boss to manage it.</dd>
+  <dt>The result</dt><dd>No phones have gone missing since, and over 30 customers now use the site.</dd>
+</dl>
+    <p><a href="[link to project, repo, or file]">View the project</a></p>
+  </article>
+  <article class="project">
+    <h3>[Project name]</h3>
+    <p class="meta">[Course or context], [month year], [solo or team of N]</p>
+    <dl>
+  <dt>The problem</dt>
+  <dd>I had no online place to show what I'm learning as a beginner web developer.</dd>
+  <dt>What I did</dt>
+  <dd>I wrote the HTML and CSS for this portfolio page myself, section by section, with guidance from my boss.</dd>
+  <dt>The result</dt>
+  <dd>A working personal page I built from scratch — my first real project, live and mine.</dd>
+</dl>
+<p><a href="https://github.com/emekasuccess978-hue">View the project</a></p>
+
+   <article class="project">
+    <h3>My first portfolio page</h3>
+    <p class="meta">Self-study, November 2025, solo</p>
+    <dl>
+      <dt>The problem</dt>
+      <dd>I had no place online to show what I'm learning as a beginner web developer.</dd>
+      <dt>What I did</dt>
+      <dd>I wrote the HTML and CSS for this page myself, section by section, fixing my own mistakes along the way with guidance from my boss.</dd>
+      <dt>The result</dt>
+      <dd>A working personal page that I built from scratch — my first real project, live and mine.</dd>
+    </dl>
+    <p><a href="https://github.com/emekasuccess978-hue">View the project</a></p>
+  </article>
+</section>
+
+<section id="about">
+  <h2>About me</h2>
+  <p>I got into web development because I wanted to understand how the websites and apps I use every day actually work. What started as curiosity turned into something I genuinely enjoy building.</p>
+  <p>Right now I'm learning HTML and CSS through a free online course, guided by my boss, and practising by building small pages like this one.</p>
+  <h3>What I value</h3>
+  <ul>
+    <li><strong>Honesty</strong>: I say clearly what I can and can't do yet, instead of overselling.</li>
+    <li><strong>Consistency</strong>: I practise a little every day rather than in one big burst.</li>
+    <li><strong>Learning from others</strong>: I ask questions and take feedback seriously.</li>
+  </ul>
+</section>
+    <li><strong>Curiosity</strong>: I was taught by my OGA BOSS PRINCE, who tried his best to impact the knowledge </li>
+  </ul>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <p>What I can do so far, and where I've used it. I'm early in my learning, so I've been honest about levels.</p>
+  <div class="skill-groups">
+    <div><h3>Things I'm learning</h3><ul>
+      <li>HTML and CSS (beginner), building this page</li>
+      <li>Python, learning — done a few small practice exercises</li>
+    </ul></div>
+    <div><h3>Everyday skills</h3><ul>
+      <li>Organising tasks, used to plan my school revision schedule</li>
+      <li>Writing clearly, shown in my class essays</li>
+    </ul></div>
+    <div><h3>Working with others</h3><ul>
+      <li>Group work, shown in school team assignments</li>
+    </ul></div>
+  </div>
+</section>
+
+<section id="learning">
+  <h2>Education and learning</h2>
+  <p><strong>Self-taught web development</strong>, ongoing (no formal program yet)</p>
+  <h3>Relevant coursework</h3>
+  <ul>
+    <li>Intro to HTML and CSS (online course)</li>
+    <li>School IT / computer class</li>
+    <li>Maths (useful for logic and problem-solving)</li>
+  </ul>
+  <h3>Learning now</h3>
+  <ul>
+    <li>FreeCodeCamp and w3shools "Responsive Web Design" tutorial — about halfway through</li>
+  </ul>
+</section>
+
+<section id="becoming">
+  <h2>Where I'm headed</h2>
+  <p>I'm working toward becoming a full-stack web developer — someone who builds clean, simple websites, apps, and AI systems.</p>
+  <p>Right now I'm learning HTML and CSS through a free online course, learning from my boss, and building small practice pages like this one, a bit at a time.</p>
+  <p><strong>I'm open to:</strong> internships, mentorship, and small collaboration projects where I can learn from others.</p>
+</section>
+
+<section id="contact">
+  <h2>Let's talk</h2>
+  <p>I'm looking for a full-stack developer role like my boss, so I can keep growing. The best way to reach me is email.</p>
+  <p><a class="button" href="mailto:emekasuccess978@gmail.com">Email me</a></p>
+  <p class="links"><a href="https://github.com/emekasuccess978-hue">GitHub</a></p>
+</section>
+
+</main>
+
+<footer><p>EMEKA SUCCES</p></footer>
+</body>
+</html>
